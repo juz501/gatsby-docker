@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "gatsby-docker",
+  "description": "Gatsby docker",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
@@ -9,8 +9,10 @@
     "postinstall": "npm run build",
     "start": "node index.js",
     "docker": "npm run dockerdown && npm run dockerup",
-    "dockerup": "docker-compose up -d",
-    "dockerdown": "docker-compose down"
+    "dockerup": "docker build -t gatsby . && docker run -d -p 8080:80 gatsby",
+    "dockerdown": "npm run dockerstop && npm run dockerrm",
+    "dockerstop": "docker ps | grep gatsby | awk '{ print $1 }' | xargs docker stop > /dev/null",
+    "dockerrm": "docker ps -a | grep gatsby | awk '{ print $1 }' | xargs docker rm > /dev/null"
   },
   "dependencies": {
     "gatsby": "^1.9.45",
