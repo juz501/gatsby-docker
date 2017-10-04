@@ -1,0 +1,6 @@
+{
+  "name": "Gatsby Docker",
+  "description": "Using GatsbyJS with nginx docker",
+  "repository": "https://github.com/juz501/gatsby-docker",
+  "keywords": ["static", "react", "gatsby", "docker", "alpine", "nginx"]
+}
