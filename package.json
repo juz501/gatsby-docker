@@ -7,14 +7,15 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "postinstall": "npm run build",
-    "start": "npm run dockerup",
+    "start": "node index.js",
     "docker": "npm run dockerdown && npm run dockerup",
     "dockerup": "docker-compose up -d",
     "dockerdown": "docker-compose down"
   },
   "dependencies": {
     "gatsby": "^1.9.45",
-    "gatsby-link": "^1.6.17"
+    "gatsby-link": "^1.6.17",
+    "express":"^4.16.1"
   },
   "devDependencies": {
     "eslint": "^4.8.0",
