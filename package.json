@@ -15,9 +15,11 @@
     "dockerrm": "docker ps -a | grep gatsby | awk '{ print $1 }' | xargs docker rm > /dev/null"
   },
   "dependencies": {
+    "compression": "^1.7.1",
     "gatsby": "^1.9.45",
     "gatsby-link": "^1.6.17",
-    "express":"^4.16.1"
+    "express": "^4.16.1",
+    "heroku-ssl-redirect": "^0.0.4"
   },
   "devDependencies": {
     "eslint": "^4.8.0",
