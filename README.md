@@ -1,2 +1,2 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a Gatsby site
+# gatsby-docker
+User gatsby starter with docker
