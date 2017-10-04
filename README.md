@@ -1,2 +1,2 @@
 # gatsby-docker
-User gatsby starter with docker
+Uses gatsby starter with docker
