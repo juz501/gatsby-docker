@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "start": "npm run build && npm run dockerup",
+    "docker": "npm run dockerdown && npm run dockerup",
+    "dockerup": "docker-compose up -d",
+    "dockerdown": "docker-compose down"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.45",
+    "gatsby-link": "^1.6.17"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-plugin-react": "^7.4.0"
+  }
+}

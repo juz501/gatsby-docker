@@ -1,0 +1,6 @@
+FROM nginx:alpine
+
+ENV PROJECT_ROOT /html
+
+COPY ./public $PROJECT_ROOT
+WORKDIR $PROJECT_ROOT
